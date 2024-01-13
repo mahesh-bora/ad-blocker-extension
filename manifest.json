@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Simple Ad Blocker",
+    "version": "1.0.0",
+    "description": "Blocks ads on all websites",
+    "permissions": [
+        "declarativeNetRequest"
+    ],
+    "declarative_net_request":{
+        "rule_resources": [
+            {
+                "id": "block_ads",
+                "enabled": true,
+                "path": "block_ads.json"
+            }
+        ]
+    }
+}
